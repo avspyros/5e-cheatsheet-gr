@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Sass Elements</title>
+</head>
+
+<body>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p></p>
+    </div>
+  </div>
+
+  <header></header>
+
+  <main>
+    <div class="container">
+      <section class="intro">
+        <h1>5e cheatsheet Gr</h1>
+        <p>Γλωσσάρι με τους βασικούς κανόνες του πρώτου και δημοφιλέστερου παιχνιδιού ρόλων στον πλανήτη.
+        </p>
+      </section>
+
+      <section>
+        <div class="title row">
+          <h2 id="generic">Γενικά</h2>
+          <object data="img/book.svg" width="30px" height="30px"></object>
+        </div>
+        <div class="content">
+          <p>
+            <span class="larger" id="hit-points">Hit Points(HP):</span>
+            Πόντοι ζωής. Αντιπροσωπεύουν τη γενική φθορά στη μάχη, τη θέληση για ζωή και τον παράγοντα της τύχης.
+          </p>
+          <p>
+            <span class="larger" id="current-hit-points">Current Hit Points:</span>
+            Τα παρόντα <strong>ΗP</strong>, πχ. αφού έχει δεχθεί ζημιά ο χαρακτήρας.
+          </p>
+          <p>
+            <span class="larger">Max Hit Points:</span>
+            To μέγιστο των HP που έχει σε κάθε level o χαρακτήρας χωρίς να έχει δεχθεί ζημιά.
+          </p>
+          <p>
+            <span class="larger">Hit Dice (HD):</span>
+            Τα ζάρια που έχει το κάθε class για να αποκτήσει HP. Πχ ο Fighter έχει 1d10 στο πρώτο level, 2d10 στο
+            δεύτερο κτλπ. Όταν ένας χαρακτήρας κάνει short rest μπορεί να ξοδέψει HD για να πάρει πίσω χαμένα HP αλλά
+            όχι περισσότερα από το Max HP. Παίρνει πίσω τα μισά HD από το σύνολο που έχει διαθέσιμα στο level του μετά
+            από ένα long rest, πχ αν είναι 8ο level μπορεί να πάρει πίσω 4 HD.
+          </p>
+          <p>
+            <span class="larger">Short Rest:</span>
+            Τουλάχιστον μία ώρα κατά την οποία ένας χαρακτήρας δεν κάνει τίποτα
+            πιο εντατικό εκτός από το να φάει/πιει, διαβάσει ή να θεραπεύσει τα τραύματά του. Επίσης μπορεί να ξοδέψει
+            Hit Dice (βλ. παραπάνω).
+          </p>
+          <p>
+            <span class="larger">Long Rest:</span>
+            Τουλάχιστον οχτώ ώρες κατά τις οποίες ένας χαρακτήρας δεν κάνει τίποτα πιο εντατικό εκτός από το να
+            φάει/πιει, μιλήσει, διαβάσει, θεραπεύσει τα τραύματά του ή να φυλάξει σκοπιά για το πολύ 2 ώρες. Επίσης
+            παίρνει πίσω Hit Dice που χει ξοδέψει σε short rest(βλ. παραπάνω).
+          </p>
+          <p>
+            <span class="larger">Saving Throw:</span>
+            Το ζάρι που ρίχνεις (1d20) για να αποφύγεις κάποια ή όλα τα efects ενός spell.
+          </p>
+          <p>
+            <span class="larger">Speed:</span>
+            Η απόσταση σε feet που μπορεί να κινηθεί ένα πλάσμα σε ένα γύρο.
+          </p>
+          <p>
+            <span class="larger">Passive Perception:</span>
+            Ο αριθμός που πρέπει να ξεπεράσει κάποιος με stealth check για να μην τον αντιληφθείς. Πχ. Αν έχεις 16
+            Passive Percepton και θέλει κάποιος να μην τον αντιληφθείς όταν είναι σχετικά κοντά σου πρέπει να φέρει 16
+            και πάνω στο stealth check του.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="title row">
+          <h2 id="battle">Μάχη</h2>
+          <object data="img/sword.svg" width="30px" height="30px"></object>
+        </div>
+        <div class="content">
+          <p>
+            <span class="larger">Initiative:</span>
+            Το ζάρι που ρίχνεις (1d20 dexterity) για να μπεις στη σειρά της μάχης όταν αυτή ξεκινάει. Οι συμμετέχοντες
+            ξεκινούν τα actions τους από το μεγαλύτερο αποτέλεσμα προς το μικρότερο.
+          </p>
+          <p>
+            <span class="larger">Round:</span>
+            κάθε γύρος κρατάει περίπου 6 δευτερόλεπτα. Στη διάρκεια του γύρου του, ο κάθε συμμετέχοντας μπορεί να
+            κινηθεί και να κάνει μια action. Αν έχει κάποιο spell ή ability που του δίνει bonus action τότε μπορεί να
+            κάνει μέχρι 1 bonus action το γύρο. Όλα τα παραπάνω γίνονται με όποια σειρά κρίνει ο παίχτης.
+          </p>
+          <p>
+            <span class="larger">Surprise:</span>
+            Οι χαρακτήρες που είναι surprised δεν λαμβάνουν μέρος στον πρώτο γύρο της μάχης.
+          </p>
+          <p>
+            <span class="larger">Bonus actions:</span>
+            Δεν μπορούν να γίνουν 2 bonus action spells στον ίδιο γύρο εκτός αν το ένα είναι cantrip.
+          </p>
+          <p>
+            <span class="larger">Reactions:</span>
+            Τα actions τα οποία μπορούν να γίνουν στο γύρο ενός άλλου συμμετέχοντα μετά από ένα γεγονός που τα
+            σηματοδοτεί. Πχ αν ένας εχθρός φύγει δίπλα από έναν χαρακτήρα ενώ είναι μπλεγμένοι σε μάχη σώμα με σώμα τότε
+            ο χαρακτήρας εκείνος μπορεί να χρησιμοποιήσει το reaction του για να του κάνει μία επίθεση άσχετα αν έχει
+            χρησιμοποιήσει το κανονικό του action εκείνο το γύρο. Ο κάθε μαχόμενος μπορεί να χρησιμοποιήσει μόνο ένα
+            reaction μέχρι την επόμενη σειρά του στο γύρο.
+          </p>
+          <p>
+            <span class="larger">Critical Hit:</span>
+            Όταν ένας μαχόμενος φέρει critical τότε διπλασιάζει τα ζάρια που ρίχνει για damage και στη συνέχεια
+            προσθέτει όποια συν ή πλην έχει. Πχ. Αν φέρει critical με dagger αντί για 1d4 ρίχνει 2d4 +/- τα εκάστοτε
+            modifiers.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="title row">
+          <h2 id="magic">Μαγεία</h2>
+          <object data="img/wand.svg" width="30px" height="30px"></object>
+        </div>
+        <div class="content">
+          <p>
+            <span class="larger">Spell Attack:</span>
+            Αν κάποιο spell λέει στην περιγραφή του να κάνεις spell attack τότε ρίχνεις κανονικό attack roll (1d20) αλλά
+            χρησιμοποιείς το spellcasting ability που έχεις για πιθανά bonus κτλπ. Πχ ο Cleric χρησιμοποιεί το Wisdom.
+            To spell attack είναι το proficiency bonus + το bonus από το spellcasting ability.
+          </p>
+          <p>
+            <span class="larger">Known Spells:</span>
+            όλα τα spells που είναι διαθέσιμα στο Class σου στο βιβλίο.
+          </p>
+          <p>
+            <span class="larger">Prepared Spells:</span>
+            Τα spells που προετοιμάζεις κάθε μέρα.
+          </p>
+          <p>
+            <span class="larger">Spell Slots:</span>
+            Τα διαθέσιμα slots που έχεις κάθε μέρα για να ξοδέψεις ώστε να κάνεις οποιοδήποτε από τα prepared spells
+            σου.
+          </p>
+          <p>
+            <span class="larger">Cantrips:</span>
+            Spells που τα ξέρεις τόσο καλά που έχουν γίνει μέρος σου και μπορείς να τα κάνεις όσες φορές θες χωρίς να
+            είναι prepared ή να ξοδέψεις spell slot.
+          </p>
+          <p>
+            <span class="larger">Ritual Spells:</span>
+            Τα spells που έχουν το "Ritual" στην περιγραφή. Μπορείς να ξοδέψεις 10 λεπτά αν το χεις prepared για να το
+            χρησιμοποιήσεις χωρίς να ξοδέψεις spell slots.
+          </p>
+          <p>
+            <span class="larger">Casting Spell at Higher Level:</span>
+            Αν το λέει στην περιγραφή, μπορείς να ξοδέψεις slot μεγαλύτερου level για να κάνεις μια πιο ισχυρή εκδοχή
+            του spell που χρησιμοποιείς.
+          </p>
+          <p>
+            <span class="larger">Casting Time:</span>
+            Τα περισσότερα spells χρειάζονται 1 action για να γίνουν cast. Κάποια spells όμως μπορούν να γίνουν cast ως
+            bonus action ή ως reaction, αν το αναφέρει στην περιγραφή τους. Σε κάποιες περιπτώσεις, κάποια spells
+            χρειάζονται πολύ χρόνο όπως 1 λεπτό (10 rounds) ή παραπάνω.
+          </p>
+          <p>
+            <span class="larger">Range:</span>
+            Η απόσταση σε feet που φτάνει ένα spell για να χτυπήσει τον στόχο τον οποίο περιγράφει.
+          </p>
+
+        </div>
+      </section>
+
+
+    </div>
+  </main>
+
+  <footer></footer>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

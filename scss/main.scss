@@ -1,0 +1,48 @@
+@import './resets';
+@import './variables';
+@import './typography';
+@import './utilities';
+@import './modal';
+
+
+body {
+  background: $lighter;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: $mid;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $dark;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title object {
+  margin-left: 1rem;
+}
+
+.intro {
+  margin-bottom: 3rem;
+  p {
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+}
+
+.content {
+  columns: 300px 2;
+}
+
+
