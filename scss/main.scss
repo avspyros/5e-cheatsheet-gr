@@ -1,8 +1,6 @@
 @import './resets';
 @import './variables';
 @import './typography';
-@import './utilities';
-@import './modal';
 
 
 body {
@@ -29,12 +27,8 @@ p {
   padding: 1rem;
 }
 
-.title object {
-  margin-left: 1rem;
-}
-
 .intro {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   p {
     font-size: 1.1rem;
     font-style: italic;
@@ -44,5 +38,26 @@ p {
 .content {
   columns: 300px 2;
 }
+
+.row {
+  display: flex;
+}
+
+.title {
+  align-items: flex-start;
+
+  img {
+    max-width: 30px;
+    margin-left: 1rem;
+  }
+}
+
+.larger {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: zoom-in;
+}
+
 
 

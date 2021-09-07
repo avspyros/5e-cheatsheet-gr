@@ -32,75 +32,6 @@ p {
   font-weight: 600;
 }
 
-.larger {
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  cursor: zoom-in;
-}
-
-.row {
-  display: flex;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  padding: 10px 20px;
-  background: #fff;
-  margin: 10% auto;
-  width: 60%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  -webkit-animation-name: modalopen;
-          animation-name: modalopen;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-.modal-content p {
-  margin: 0;
-}
-
-.close {
-  color: #ccc;
-  float: right;
-  font-size: 30px;
-  color: #fff;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@-webkit-keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 body {
   background: #e0e0ae;
 }
@@ -125,12 +56,8 @@ p {
   padding: 1rem;
 }
 
-.title object {
-  margin-left: 1rem;
-}
-
 .intro {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .intro p {
   font-size: 1.1rem;
@@ -140,4 +67,23 @@ p {
 .content {
   -moz-columns: 300px 2;
        columns: 300px 2;
+}
+
+.row {
+  display: flex;
+}
+
+.title {
+  align-items: flex-start;
+}
+.title img {
+  max-width: 30px;
+  margin-left: 1rem;
+}
+
+.larger {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: zoom-in;
 }/*# sourceMappingURL=main.css.map */
