@@ -35,11 +35,7 @@
         </div>
         <div class="content">
           <p>
-            <span class="larger tooltip" id="hit-points">Hit Points(HP):
-              <!-- <span class="info"><span class="text">Να ένα
-                  παράδειγμα</span>
-              </span> -->
-            </span>
+            <span class="larger" id="hit-points" data-modal-target="#modal">Hit Points(HP):</span>
             Πόντοι ζωής. Αντιπροσωπεύουν τη γενική φθορά στη μάχη, τη θέληση για ζωή και τον παράγοντα της τύχης.
           </p>
           <p>
@@ -51,12 +47,16 @@
             To μέγιστο των HP που έχει σε κάθε level o χαρακτήρας χωρίς να έχει δεχθεί ζημιά.
           </p>
           <p>
-            <span class="larger">Hit Dice (HD):</span>
-            Τα ζάρια που έχει το κάθε class για να αποκτήσει HP. Πχ ο Fighter έχει 1d10 στο πρώτο level, 2d10 στο
-            δεύτερο κτλπ. Όταν ένας χαρακτήρας κάνει short rest μπορεί να ξοδέψει HD για να πάρει πίσω χαμένα HP αλλά
-            όχι περισσότερα από το Max HP. Παίρνει πίσω τα μισά HD από το σύνολο που έχει διαθέσιμα στο level του μετά
-            από ένα long rest, πχ αν είναι 8ο level μπορεί να πάρει πίσω 4 HD.
+            <span class="larger" id="hit-dice">Hit Dice (HD):</span>Τα ζάρια που έχει το κάθε class για να αποκτήσει HP.
           </p>
+          <!-- <div class="example">
+            <span class="example-title">Παράδειγμα Hit Dice (HD):</span>
+            <span class="example-text">Πχ ο Fighter έχει 1d10 στο πρώτο level, 2d10 στο δεύτερο κτλπ. Όταν ένας
+              χαρακτήρας
+              κάνει short rest μπορεί να ξοδέψει HD για να πάρει πίσω χαμένα HP αλλά όχι περισσότερα από το Max HP.
+              Παίρνει πίσω τα μισά HD από το σύνολο που έχει διαθέσιμα στο level του μετά από ένα long rest, πχ αν είναι
+              8ο level μπορεί να πάρει πίσω 4 HD.</span>
+          </div> -->
           <p>
             <span class="larger">Short Rest:</span>
             Τουλάχιστον μία ώρα κατά την οποία ένας χαρακτήρας δεν κάνει τίποτα
@@ -188,8 +188,22 @@
 
   <footer></footer>
 
+  <!-- Modal -->
 
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Πχ ο Fighter έχει 1d10 στο πρώτο level, 2d10 στο δεύτερο κτλπ. Όταν ένας χαρακτήρας κάνει short rest μπορεί να
+      ξοδέψει HD για να πάρει πίσω χαμένα HP αλλά όχι περισσότερα από το Max HP. Παίρνει πίσω τα μισά HD από το σύνολο
+      που έχει διαθέσιμα στο level του μετά από ένα long rest, πχ αν είναι 8ο level μπορεί να πάρει πίσω 4 HD.
+    </div>
+  </div>
+  <div id="overlay"></div>
 
+  <script src="js/main.js"></script>
 
 </body>
 
